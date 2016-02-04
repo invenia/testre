@@ -27,6 +27,7 @@ setup(
     tests_require=(
         'coverage',
         'nose',
+        'python-coveralls',
     ),
     classifiers=(
         "Development Status :: 3 - Alpha",

@@ -1,0 +1,20 @@
+language: python
+sudo: false
+env:
+  - TOXENV=py27
+  - TOXENV=py35
+  - TOXENV=pypy
+  - TOXENV=flake8
+matrix:
+  fast_finish: true
+before_install:
+  - 'source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list'
+  - wget -qO- https://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -
+  - sudo apt-get -qq update
+  - sudo apt-get install rethinkdb
+install:
+  - travis_retry pip install tox==1.6.1
+script:
+  - travis_retry tox
+after_success:
+  - coveralls
