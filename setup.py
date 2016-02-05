@@ -25,7 +25,6 @@ setup(
         'rethinkdb',
     ),
     tests_require=(
-        'codecov',
         'coverage',
         'nose',
     ),
