@@ -1,7 +1,7 @@
 Testre
 ======
 [![Build Status](https://travis-ci.org/invenia/testre.svg?branch=master)](https://travis-ci.org/invenia/testre)
-[![Coverage Status](https://coveralls.io/repos/github/invenia/testre/badge.svg?branch=master)](https://coveralls.io/github/invenia/testre?branch=master)
+[![codecov.io](https://codecov.io/github/invenia/testre/coverage.svg?branch=master)](https://codecov.io/github/invenia/testre?branch=master)
 
 A library for writing test cases against a temporary rethinkdb database.
 

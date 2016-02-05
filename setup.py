@@ -25,9 +25,9 @@ setup(
         'rethinkdb',
     ),
     tests_require=(
+        'codecov',
         'coverage',
         'nose',
-        'python-coveralls',
     ),
     classifiers=(
         "Development Status :: 3 - Alpha",

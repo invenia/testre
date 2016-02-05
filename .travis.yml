@@ -17,4 +17,4 @@ install:
 script:
   - travis_retry tox
 after_success:
-  - coveralls
+  - codecov
